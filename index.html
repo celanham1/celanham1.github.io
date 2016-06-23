@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chris Lanham's Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="description" content="I am a software developer in Java and C/C++"/>
+	
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+	<link href='https://fonts.googleapis.com/css?family=Alegreya+Sans:400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	
+	<link href="styles/portfolio-style.css" rel="stylesheet" type="text/css" />
+	
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+
+	<script type="text/javascript">
+	
+	function switch_content(id) {
+		if(id == 'resume'){
+			document.getElementById('resume').style.display = 'block';
+			document.getElementById('portfolio').style.display = 'none';
+			document.getElementById('contact').style.display = 'none';
+			document.getElementById('home').style.display = 'none';
+			document.getElementById('about').style.display = 'none';
+		}
+		else if(id == 'portfolio') {
+		document.getElementById('resume').style.display = 'none';
+			document.getElementById('portfolio').style.display = 'block';
+			document.getElementById('contact').style.display = 'none';
+			document.getElementById('home').style.display = 'none';
+			document.getElementById('about').style.display = 'none';
+		}
+		else if(id == 'contact') {
+		document.getElementById('resume').style.display = 'none';
+			document.getElementById('portfolio').style.display = 'none';
+			document.getElementById('contact').style.display = 'block';
+			document.getElementById('home').style.display = 'none';
+			document.getElementById('about').style.display = 'none';
+		}
+		
+		else if(id == 'home') {
+			document.getElementById('resume').style.display = 'none';
+			document.getElementById('portfolio').style.display = 'none';
+			document.getElementById('contact').style.display = 'none';
+			document.getElementById('home').style.display = 'block';
+			document.getElementById('about').style.display = 'none';
+		}
+		
+		else if(id == 'about') {
+			document.getElementById('resume').style.display = 'none';
+			document.getElementById('portfolio').style.display = 'none';
+			document.getElementById('contact').style.display = 'none';
+			document.getElementById('home').style.display = 'none';
+			document.getElementById('about').style.display = 'Block';
+		}
+	}
+	
+	function hideAllContent(){
+		document.getElementById('resume').style.display = 'none';
+		document.getElementById('portfolio').style.display = 'none';
+		document.getElementById('contact').style.display = 'none';
+		document.getElementById('home').style.display = 'none';
+		document.getElementById('about').style.display = 'none';
+	}
+	
+    </script>
+	
+  </head>
+  <body>
+	<div id="container">
+		<div id="header" onclick="switch_content('home')">Chistopher Lanham</div>
+		
+		<div id="navBar">
+			<ul id="menu">
+				<li><a id="menu-1" onclick="switch_content('resume')">Experience</a></li>
+				<li><a id="menu-2" onclick="switch_content('portfolio')">Portfolio</a></li>
+				<li><a id="menu-3" onclick="switch_content('about')">About</a></li>
+				<li><a id="menu-4" onclick="switch_content('contact')">Contact</a></li>
+			</ul> 
+		</div>
+
+	    <div id="content">
+			<div id="home">
+				<h3 align="center">Hi, My name Chris.</h3>
+				
+				<h3>I am a <span style="color:#354649">Software Tester</span></h3>
+				<p>I perform functional, integration, and regression tests on code.</br>
+				I find defects and create automated tests in Cucumber to make my job easier.</br>
+				</p>
+				<h3>I am a <span style="color:#354649">Software Developer</span></h3>
+				<p>I write back end code in Java, Python, C, C++. I am teaching myself web programming by working on projects like this website.</br>
+				</br>
+				</p>
+			</div>
+			<div id="resume" class="hide">
+				<h3 align="center" style="color:#354649">Associate QA Analyst Consultant at Entech</h3>
+				<p>November 2015 - Now</p>
+				<p>I work on-site at Barclays Bank where I am a member of a Scrum team with half the members in Pune, India. I perform functional, integration, and regression tests on on back-end APIs for the Barclaycard US website, mobile apps, and 
+				Customer Care Desktop (CCD). APIs I have tested dealt mostly with authentication such as one time passcode, RSA & Verid challenge questions, and user login.  
+				</p>
+				<ul>
+					<li>Testing tools: SoapUI, ReadyAPI!</li>
+					<li>Test and Defect Management: HP Application Lifecycle Management (HP ALM)</li>
+					<li>Manage Change Tickets and Incidents: Unicenter, ServiceNow</li>
+					<li>Databases: Oracle 11g</li>
+					<li>Other: Agile, Subversion (SVN) using TortoiseSVN</li>
+				</ul>
+				<h3 align="center" style="color:#354649">Education:</h3>
+				West Virginia University,  Dec. 2013</br>
+				B.S. Computer Engineering</br>
+				B.S. Computer Science</br>
+				</p>
+			</div>
+			<div id="portfolio" class="hide"> 
+				<p align="center" onclick="location.href='https://github.com/celanham1';">Check out my <img src="images/GitHub-Mark-32px.png" alt="GitHub" "></img></P>		
+				</p>
+				<h3 align="center" style="color:#354649">Basic Relational Database in Java</h3>
+				<p>A semester long project for my CS210 class where I created a relational database in Java. It uses a command line interface to read in statements and Regex to match them to commands. 
+				I saved inserted rows into a table object which I then stored in a hash map. I implemented serialization by saving the DB schema to an XML file and all table data to binary files. 
+				</p>
+				<h3 align="center" style="color:#354649">Automated Taxi Advisory System</h3>
+				
+				<p><img class="scalePic" src="images/IMG_1370.jpg" hspace="10" align="left"></img>My senior design project where I worked on a team to create a system that uses taxiway lighting to help pilots and air traffic controllers prevent taxiway incursions.
+				I created a GUI in python using WxWidgets. I programmed an Arduino microcontroller to control the LEDs and RFID reader on a model airport my team built. RFID tags were taped to RC cars (we couldn't find any RC planes small enough) which the Arduino
+				will detect on the model and display on a map in the GUI.
+		        </p>
+			    <p style="color:#A3C6C4" onclick="location.href='http://www.csee.wvu.edu/seniordesign/2013springee480-gp03/';">Check out the project web page</p></br></br>
+				<h3 align="center" style="color:#354649">ZIL Compiler</h3>
+				<p>My Compiler Construction term project for where I created a compiler for a subset of the Zork Implementation Language (ZIL) used to build interactive fiction games. I used C with FLEX and BISON to create the compiler. It reads in ZIL code to create rooms, characters, and items for a game.
+				The player can then play this game in a command line interface.</p>
+				<h3 align="center" style="color:#354649">Computer Graphics Term Project</h3>
+				<p>I created a scene using OpenGL and C++ depicting a family home in rural West Virginia. It includes a house and shed whose doors and windows can be interacted with. There's a truck which the user can
+				drive around. The user can use a keyboard and mouse to zoom in and out or pan around the scene.</p>
+			</div>
+			<div id="contact" class="hide">
+				<h3 align="center" style="color:#354649">Contact Me</h3>
+				<p align="center" list-style-type="none">
+				celanham1@gmail.com</br></br>
+				(240)-682-3506</br></br>
+				</p>
+			</div>
+			<div id="about" class="hide">
+				<h3 align="center" style="color:#354649">About Me</h3>
+				<p align="center"><img class="circleImg" src="images/profile_pic.jpg"></img></p>
+				<p>I am from Waldorf, MD, but currently I live and work in Wilmington, DE. On my off time I like to play video games, read comics, watch Netflix, and watch local bands play music.</p>
+			</div>
+		</div>
+		
+		<div id="footer">
+		
+		</div>
+	
+	</div>
+  </body>
+</html>
