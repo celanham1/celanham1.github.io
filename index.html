@@ -15,44 +15,12 @@
 
 	<script type="text/javascript">
 	
-	function switch_content(id) {
-		if(id == 'resume'){
-			document.getElementById('resume').style.display = 'block';
-			document.getElementById('portfolio').style.display = 'none';
-			document.getElementById('contact').style.display = 'none';
-			document.getElementById('home').style.display = 'none';
-			document.getElementById('about').style.display = 'none';
-		}
-		else if(id == 'portfolio') {
-		document.getElementById('resume').style.display = 'none';
-			document.getElementById('portfolio').style.display = 'block';
-			document.getElementById('contact').style.display = 'none';
-			document.getElementById('home').style.display = 'none';
-			document.getElementById('about').style.display = 'none';
-		}
-		else if(id == 'contact') {
-		document.getElementById('resume').style.display = 'none';
-			document.getElementById('portfolio').style.display = 'none';
-			document.getElementById('contact').style.display = 'block';
-			document.getElementById('home').style.display = 'none';
-			document.getElementById('about').style.display = 'none';
-		}
-		
-		else if(id == 'home') {
-			document.getElementById('resume').style.display = 'none';
-			document.getElementById('portfolio').style.display = 'none';
-			document.getElementById('contact').style.display = 'none';
-			document.getElementById('home').style.display = 'block';
-			document.getElementById('about').style.display = 'none';
-		}
-		
-		else if(id == 'about') {
-			document.getElementById('resume').style.display = 'none';
-			document.getElementById('portfolio').style.display = 'none';
-			document.getElementById('contact').style.display = 'none';
-			document.getElementById('home').style.display = 'none';
-			document.getElementById('about').style.display = 'Block';
-		}
+	var currSection = 'home';
+	
+	function switchSections(id) {
+		document.getElementById(currSection).style.display = 'none';
+		document.getElementById(id).style.display = 'block';
+		currSection = id;
 	}
 	
 	function hideAllContent(){
@@ -68,27 +36,26 @@
   </head>
   <body>
 	<div id="container">
-		<div id="header" onclick="switch_content('home')">Chistopher Lanham</div>
+		<div id="header" onclick="switchSections('home')">Chistopher Lanham</div>
 		
 		<div id="navBar">
 			<ul id="menu">
-				<li><a id="menu-1" onclick="switch_content('resume')">Experience</a></li>
-				<li><a id="menu-2" onclick="switch_content('portfolio')">Portfolio</a></li>
-				<li><a id="menu-3" onclick="switch_content('about')">About</a></li>
-				<li><a id="menu-4" onclick="switch_content('contact')">Contact</a></li>
+				<li><a onclick="switchSections('resume')">Experience</a></li>
+				<li><a onclick="switchSections('portfolio')">Portfolio</a></li>
+				<li><a onclick="switchSections('about')">About</a></li>
+				<li><a onclick="switchSections('contact')">Contact</a></li>
 			</ul> 
 		</div>
 
 	    <div id="content">
 			<div id="home">
-				<h3 align="center">Hi, My name Chris.</h3>
-				
+				<h3 align="center">Hi, My name Chris.</h3>	
 				<h3>I am a <span style="color:#354649">Software Tester</span></h3>
-				<p>I perform functional, integration, and regression tests on code.</br>
-				I find defects and create automated tests in Cucumber to make my job easier.</br>
+				<p>I perform functional and regression tests to find defects in code.</br>
+				I create automated tests in Cucumber and SoapUI.</br>
 				</p>
 				<h3>I am a <span style="color:#354649">Software Developer</span></h3>
-				<p>I write back end code in Java, Python, C, C++. I am teaching myself web programming by working on projects like this website.</br>
+				<p>I program in Java, C, C++, and Python. I am currently teaching myself HTML, CSS, and JavaScript by working on projects like this website.</br>
 				</br>
 				</p>
 			</div>
@@ -101,7 +68,7 @@
 				<ul>
 					<li>Testing tools: SoapUI, ReadyAPI!</li>
 					<li>Test and Defect Management: HP Application Lifecycle Management (HP ALM)</li>
-					<li>Manage Change Tickets and Incidents: Unicenter, ServiceNow</li>
+					<li>Manage Incidents: Unicenter, ServiceNow</li>
 					<li>Databases: Oracle 11g</li>
 					<li>Other: Agile, Subversion (SVN) using TortoiseSVN</li>
 				</ul>
@@ -142,7 +109,7 @@
 			<div id="about" class="hide">
 				<h3 align="center" style="color:#354649">About Me</h3>
 				<p align="center"><img class="circleImg" src="images/profile_pic.jpg"></img></p>
-				<p>I am from Waldorf, MD, but currently I live and work in Wilmington, DE. On my off time I like to play video games, read comics, watch Netflix, and watch local bands play music.</p>
+				<p>I am from Waldorf, MD, but currently live and work in Wilmington, DE. On my off time I like to play video games, read comics, watch Netflix, and go to concerts.</p>
 			</div>
 		</div>
 		
