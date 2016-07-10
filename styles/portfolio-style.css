@@ -13,14 +13,17 @@
 }
 
 .scalePic {
-	height: 50%;
-	width: 50%;
+	height: 40%;
+	width: 40%;
+	
 }
+
 body {
     background: #E0E7E9;
 	margin: 0;
 	padding: 0;
 	text-align: center;
+	width: 100%;
 }
 
 #container {
@@ -28,9 +31,11 @@ body {
 	margin: auto;
 	text-align: center;
 	background: #E0E7E9;
-	height: 750px;
-	width: 750px;
+	height: 100%;
+	width: 100%;
+	position: absolute;
 }
+
 
 #header {
 	margin-top: 20px;
@@ -81,49 +86,65 @@ body {
 }
 
 #content {
-	width: 100%;
+	max-height: 900px;
+	max-width: 800px;
+	height: auto;
+	width: auto;
 	margin: 0 auto;
 	padding: 0;
 	text-align: center;
 	font-family: 'Montserrat', sans-serif; font-weight: 400;
-	color: #6C7A89
+	color: #6C7A89;
+	position: relative;
 }
 
 #resume {
 	text-align: left;
 	margin: 0 auto;
-	width:600px;
-	
+	height: 80%;
+	width: 80%;
+	position: relative;
 }
 
 #portfolio {
 	text-align: left;
 	margin: 0 auto;
-	width:600px;
+	height: 80%;
+	width: 80%;
+	position: relative;
 }
+
+
 
 #home {
 	text-align: left;
 	margin: 0 auto;
-	width:600px;
+	height: 80%;
+	width: 80%;
+	position: relative;
 }
 
 #about {
 	text-align: left;
 	margin: 0 auto;
-	width:600px;
+	height: 80%;
+	width: 80%;
+	position: relative;
 }
 
 #contact {
 	text-decoration:none;
 	text-align: left;
 	margin: 0 auto;
-	width:600px;
+	height: 80%;
+	width: 80%;
+	position: relative;
 }
 #footer {
-	width: auto;
-	margin: auto;
-	text-align: center;
+	text-align: left;
+	height: 80%;
+	width: 80%;
+	position: relative;
 }
 
 h1 {
