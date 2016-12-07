@@ -15,7 +15,7 @@
 
 	<script type="text/javascript">
 	
-	var currSection = 'home';
+	var currSection = 'resume';
 	
 	function switchSections(id) {
 		document.getElementById(currSection).style.display = 'none';
@@ -36,7 +36,7 @@
   </head>
   <body>
 	<div id="container">
-		<div id="header" onclick="switchSections('home')">Chistopher Lanham</div>
+		<div id="header" onclick="switchSections('about')">Chistopher Lanham</div>
 		
 		<div id="navBar">
 			<ul id="menu">
@@ -48,80 +48,66 @@
 		</div>
 
 	    <div id="content">
-			<div id="home">
-				<h3 align="center">Hi, My name Chris.</h3>	
-				<h3>I am a <span style="color:#354649">Software Tester</span></h3>
-				<p>I perform functional and regression tests to find defects in code.</br>
-				I create automated tests in Cucumber and SoapUI.</br>
+			<div id="resume">
+				<h3 align="center" style="color:#354649">Experience</h3>
+				<p align="left" style="color:#354649"><b>Nov 2015 - Now:</b> Associate QA Analyst, <a href="https://www.entech.com/">Entech</a></p>
+				<p align="left"><b>Client:</b> <a href="https://home.barclaycardus.com/">Barclaycard US</a></p>
+				<p>I am a member of an Agile Scrum team where I perform functional, integration, and regression tests on on back-end APIs for the Barclaycard US website, mobile apps, and 
+				Customer Care Desktop (CCD). 
 				</p>
-				<h3>I am a <span style="color:#354649">Software Developer</span></h3>
-				<p>I program in Java, C, C++, and Python. I am currently teaching myself HTML, CSS, and JavaScript by working on projects like this website.</br>
-				</br>
-				</p>
-			</div>
-			<div id="resume" class="hide">
-				<h3 align="center" style="color:#354649">Associate QA Analyst Consultant at Entech</h3>
-				<p>November 2015 - Now</p>
-				<p>I work on-site at Barclays Bank where I am a member of a Scrum team with half the members in Pune, India. I perform functional and regression tests on on back end APIs for the Barclaycard US website, mobile apps, and 
-				Customer Care Desktop (CCD). APIs I have tested dealt mostly with authentication such as one time passcode, RSA & Verid challenge questions, and user login.  
-				</p>
-				<ul>
-					<li>Testing tools: SoapUI, ReadyAPI!</li>
-					<li>Test and Defect Management: HP Application Lifecycle Management (HP ALM)</li>
-					<li>Manage Incidents: Unicenter, ServiceNow</li>
-					<li>Databases: Oracle 11g</li>
-					<li>OS: Windows 7, UNIX (Search through logs)</li>
-					<li>Other: Agile, Subversion (SVN) using TortoiseSVN</li>
-				</ul>
-				<h3 align="center" style="color:#354649">Education:</h3>
+
+				<h3 align="center" style="color:#354649">Skills</h3>
+				<p><b>Programming Languages:</b> C, C++, Java, Python</p>
+				<p><b>Databases:</b> Oracle 11g</p>
+				<p><b>Testing Tools:</b> Ready! API, SoapUI, Cucumber framework</p>
+				<p><b>Test and Defect Management:</b> HP Quality Center (HP QC), HP Application Lifecycle Management (HP ALM)</p>
+				<p><b>Agile Tools:</b> Rally, Confluence</p>
+				<p><b>AVersion Control:</b> Git, Subversion (Using TortoiseSVN)</p>
+		
+				<h3 align="center" style="color:#354649">Education</h3>
 				West Virginia University,  Dec. 2013</br>
 				B.S. Computer Engineering</br>
-				B.S. Computer Science</br></br>
-				Courses: Computer Architecture, Operating Systems Structure, Real-Time Systems Development, Database Design, Microcomputer Struct/Interfcng, Analog Electronics, Digital Electronics
+				B.S. Computer Science</br>
 				</p>
 			</div>
 			<div id="portfolio" class="hide"> 
-				<p align="center" onclick="location.href='https://github.com/celanham1';">Check out my <img src="images/GitHub-Mark-32px.png" alt="GitHub" "></img></P>		
-				</p>
-				<h3 align="center" style="color:#354649">Basic Relational Database</h3>
-				<p align="center">Java</p>
-				<p>A semester long project for my CS210 class where I created a relational database. It uses a command line interface to read in statements and Regex to match them to a list of commands. 
-				Statements are similar to SQL and includes the most common DDL and DML statements. A hash map was created for each database containing all tables which had an arrayList of row objects. I implemented serialization by saving the DB schema to an XML file and all table data to binary files. 
-				</p>
-				<h3 align="center" style="color:#354649">Automated Taxi Advisory System</h3>
-				<p align="center">C, Python</p>
-				<p><img class="scalePic" src="images/IMG_1370.jpg" hspace="10" align="left" valign="left" vspace="5" hspace="5"></img>My senior design project where I worked on a team to create a system that uses taxiway lighting to help pilots and air traffic controllers prevent taxiway incursions.
-				I created a GUI in Python using WxWidgets and programmed an Arduino microcontroller to control the LEDs and RFID reader on a model airport my team built. RFID tags were taped to RC cars (we couldn't find any RC planes small enough) which the RFID reader
-				would detect and then my program displays it on a map in the GUI.
-		        </p>
-			    <p style="color:#A3C6C4" onclick="location.href='http://www.csee.wvu.edu/seniordesign/2013springee480-gp03/';">Check out the project web page</p></br></br>
-				<h3 align="center" style="color:#354649">ZIL Compiler</h3>
-				<p align="center">C, Flex/Bison</p>
-				<p>Term project for my Compiler Construction class where I created a compiler for a subset of the Zork Implementation Language (ZIL) used to build interactive fiction games. It reads in ZIL code to create rooms, characters, and items for a game.
-				The player can then play this game in a command line interface. It included a simple battle system and allowed characters to interact with objects.</p>
-				<h3 align="center" style="color:#354649">Computer Graphics Term Project</h3>
-				<p align="center">C++, OpenGL</p>
-				<p>I created a scene depicting a family home in rural West Virginia. It includes a house and shed whose doors and windows can be interacted with. There's a truck which the user can
-				drive around. The user can use a keyboard and mouse to zoom in and out or pan around the scene.</p>
+				<p align="center" onclick="location.href='https://github.com/celanham1'">Check out my <img src="images/GitHub-Mark-32px.png" alt="GitHub" "></img></p>	
+				<h3 align="center" style="color:#354649">School Projects</h3>
+				<div id="proj">
+					<p align="center" style="color:#354649"><b>Basic Relational Database</b><br />File and Data Structures, 2012<br />JAVA</p>
+					<p>A small database that recognizes common SQL operators such as Select, Insert, Update, Join, Union, Intersect, and Minus. This program uses a command line interface to read in statements from the user.   
+					
+					</p>
+				</div>
+				<div id="proj">
+					<p align="center" style="color:#354649"><b>Zork Implementation Language (ZIL) Compiler</b><br />Compiler Construction, 2012<br />FLEX, BISON, C</p>
+					<p>A compiler created for a subset of the Zork Implementation Language (ZIL) used to build text-based interactive fiction games. The ZIL code is parsed using Flex and Bison to create rooms, characters, and items for a game. The user can then play that game using a command line interface</p>
+				</div>
+				<div id="proj">
+					<p align="center" style="color:#354649"><b>Automated Taxi Advisory System</b><br />Senior Design, 2013<br />PYTHON, C</p>
+					<p><img class="scalePic" src="images/IMG_1370.jpg" hspace="10" align="bottom"></img>My senior design project where I worked on a team to create a system that uses taxiway lighting to help pilots and air traffic controllers prevent taxiway incursions.
+					I created a GUI in Python using WxWidgets. I programmed an Arduino microcontroller to control the LEDs and RFID reader on a model airport. RFID tags were taped to RC cars (we couldn't find any RC planes small enough to fit on the model) allows the program to display its position in real-time on the GUI.</p>
+					
+				</div>
+				
+				<div id="proj">
+					<p align="center" style="color:#354649"><b>Interactive House Scence</b><br />Intro to Computer Graphics, 2013<br />OpenGL, C++</p>
+					<p>I created a scene using OpenGL and C++ depicting a family home in rural West Virginia. It includes a house and shed whose doors and windows can be interacted with. There's a truck which the user can
+					drive around. The user can use a keyboard and mouse to zoom in and out or pan around the scene.</p>
+				</div>
 			</div>
 			<div id="contact" class="hide">
-				<h3 align="center" style="color:#354649">Contact Me</h3>
 				<p align="center" list-style-type="none">
-				celanham1@gmail.com</br></br>
-				(240)-682-3506</br></br>
+				If you have any questions for me please send me an email or call me.<br /><br />
+				celanham1@gmail.com<br /><br />
+				(240)-682-3506
 				</p>
 			</div>
 			<div id="about" class="hide">
-				<h3 align="center" style="color:#354649">About Me</h3>
 				<p align="center"><img class="circleImg" src="images/profile_pic.jpg"></img></p>
-				<p>I am from Waldorf, MD, but currently live and work in Wilmington, DE. On my off time I like to play video games, read comics, watch Netflix, and go to concerts.</p>
+				<p>I'm a Software Tester originally from Waldorf, MD. I currently work as a consultant for Barclaycard US in Newark, DE.</p>
 			</div>
 		</div>
-		
-		<div id="footer">
-		
-		</div>
-	
 	</div>
   </body>
 </html>

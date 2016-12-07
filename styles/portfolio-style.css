@@ -13,29 +13,26 @@
 }
 
 .scalePic {
-	height: 40%;
-	width: 40%;
-	
+	float: left;
+	height: 25%;
+	width: 25%;
+	display:inline;
 }
-
 body {
-    background: #E0E7E9;
+    background: white;
 	margin: 0;
-	padding: 0;
+	padding-bottom: 50px;
 	text-align: center;
-	width: 100%;
 }
 
 #container {
 	width: auto;
 	margin: auto;
 	text-align: center;
-	background: #E0E7E9;
-	height: 100%;
-	width: 100%;
-	position: absolute;
+	background: white;
+	height: auto;
+	width: auto;
 }
-
 
 #header {
 	margin-top: 20px;
@@ -50,7 +47,7 @@ body {
 }
 
 #navBar {
-	background: #E0E7E9;
+	background: white;
 	float: none;
 	width: 100%;
 	margin: 0 auto;
@@ -86,65 +83,46 @@ body {
 }
 
 #content {
-	max-height: 900px;
-	max-width: 800px;
-	height: auto;
 	width: auto;
 	margin: 0 auto;
 	padding: 0;
 	text-align: center;
 	font-family: 'Montserrat', sans-serif; font-weight: 400;
-	color: #6C7A89;
-	position: relative;
+	color: #6C7A89
 }
 
 #resume {
 	text-align: left;
 	margin: 0 auto;
-	height: 80%;
-	width: 80%;
-	position: relative;
+	width:50%;
+	
 }
 
 #portfolio {
 	text-align: left;
 	margin: 0 auto;
-	height: 80%;
-	width: 80%;
-	position: relative;
+	width:auto;
 }
 
-
-
-#home {
-	text-align: left;
+#proj {
+	float: center;
 	margin: 0 auto;
-	height: 80%;
-	width: 80%;
-	position: relative;
+	width:50%;
+	overflow: hidden;
 }
+
 
 #about {
 	text-align: left;
 	margin: 0 auto;
-	height: 80%;
-	width: 80%;
-	position: relative;
+	width:30%;
 }
 
 #contact {
 	text-decoration:none;
 	text-align: left;
 	margin: 0 auto;
-	height: 80%;
-	width: 80%;
-	position: relative;
-}
-#footer {
-	text-align: left;
-	height: 80%;
-	width: 80%;
-	position: relative;
+	width:50%;
 }
 
 h1 {
